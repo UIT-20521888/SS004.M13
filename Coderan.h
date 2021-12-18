@@ -35,13 +35,17 @@ point Moi();
 bool Gameover();
 bool KTanmoi(point);
 void Themdot();
-void Ran(int Capdo)
+void Ran(int level)
 {
-	if (Capdo == 1)
+	if (level == 1)
 		int y = 200;
-	else if (Capdo == 2)
-		int y = 450;
-	else int y = 700;
+	else if (level == 2)
+		int y = 400;
+	else if (level == 3)
+		int y = 600;
+	else if (level == 4)
+		int y = 800;
+	else int y = 1000;
 	Khoitao();//Khởi tạo
 	int huong = PHAI,diem=0;//Hướng ban đầu di chuyển qua phải và điểm là 0
 	Wall();//Vẽ tường
